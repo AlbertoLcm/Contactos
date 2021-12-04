@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Quicksand:wght@300&display=swap");
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(240, 242, 245);
+}
+#titulo{
+    text-align: center;
+}
+#titulo h1 {
+    font-family: 'Quicksand';
+    cursor: pointer;
+    font-weight: bold;
+}
+#titulo svg{
+    cursor: pointer;
+}
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+.form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    width: 450px;
+}
+
+#table{
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
