@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const addContact = () => {
         const insert = table.insertRow();
         insert.innerHTML = `
-            <th scope="row">1</th>
             <td>${nombre.value}</td>
             <td>${apellido.value}</td>
             <td>${numero.value}</td>

@@ -19,38 +19,24 @@ rel="stylesheet"
   </head>
   <body>
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">UserName</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link active" aria-current="page" href="#">Cerrar sesión</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success " type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar contacto" aria-label="Search">
+              <button class="btn btn-outline-success " type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -58,8 +44,8 @@ rel="stylesheet"
     <!-- End Header -->
 
     <!-- Page content -->
-    <div class="container p-5"> 
-      <section id="titulo" class="mb-5">
+    <div class="container"> 
+      <section id="titulo" class="mb-5 mt-5">
         <h1>Mis contactos</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16" 
          data-bs-toggle="modal" data-bs-target="#modalAdd">
@@ -67,61 +53,47 @@ rel="stylesheet"
         </svg>
       </section>
    
+      <div id="contTable">
+        <table class="table table-hover" id="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Número</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>5589435746</td>
+              <td class="text-center">
+                <button class="btn btn-primary mb-1">
+                <i class="fa fa-pencil"></i>
+                </button>
+                <button class="btn btn-danger mb-1">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>5509234512</td>
+              <td class="text-center">
+                <button class="btn btn-primary mb-1">
+                <i class="fa fa-pencil"></i>
+                </button>
+                <button class="btn btn-danger mb-1">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="table table-hover" id="table">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">Número</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>5589435746</td>
-            <td class="text-center">
-              <button class="btn btn-primary mb-1">
-              <i class="fa fa-pencil"></i>
-              </button>
-              <button class="btn btn-danger mb-1">
-                <i class="fa fa-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>5509234512</td>
-            <td class="text-center">
-              <button class="btn btn-primary mb-1">
-              <i class="fa fa-pencil"></i>
-              </button>
-              <button class="btn btn-danger mb-1">
-                <i class="fa fa-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>5582376574</td>
-            <td class="text-center">
-              <button class="btn btn-primary mb-1">
-              <i class="fa fa-pencil"></i>
-              </button>
-              <button class="btn btn-danger mb-1">
-                <i class="fa fa-trash"></i>
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
     </div>
     
     <!-- End page content -->
