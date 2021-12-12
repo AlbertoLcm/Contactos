@@ -18,7 +18,7 @@
           <div class="abs-center">
 
               <!-- Login -->
-              <form class="border p-3 form" action="agenda.html">
+              <form class="border p-3 form" action="/" method="post">
                 <section id="titulo" class="mb-5">
                   <h1>Agenda de contactos</h1>
                 </section>
@@ -26,12 +26,12 @@
                   A simple danger alert—check it out!
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label fs-5">Nombre de usuario</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label fs-5">Username</label>
+                    <input type="text" name="username" class="form-control" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label fs-5">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" name="password" class="form-control">
                   </div>        
                   <button type="submit" class="btn btn-primary w-100 fs-5">Iniciar sesión</button>
                   <hr>
@@ -60,29 +60,30 @@
                   A simple danger alert—check it out!
                 </div>
                 
-                <form>
+                <form action="/registrar" method="post">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label fs-5">Nombre</label>
-                    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre" id="txtNombre">
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre" name="nombre">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label fs-5">Apellido</label>
-                    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido" id="txtApellido">
+                    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido" name="apellido">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label fs-5">Username</label>
-                    <input type="text" class="form-control" id="txtUser1" placeholder="Usuario">
+                    <input type="text" class="form-control" id="txtUser1" placeholder="Usuario" name="username">
                   </div> 
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label fs-5">Contraseña</label>
-                    <input type="password" class="form-control" id="txtPassword1" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="txtPassword1" placeholder="Contraseña" name="password">
                   </div> 
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success w-100 fs-5">Registrate</button>
+                  </div>
                 </form>
         
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-success w-100 fs-5">Registrate</button>
-              </div>
+              
             </div>
           </div>
         </div>
